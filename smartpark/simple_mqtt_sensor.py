@@ -33,6 +33,7 @@ if __name__ == '__main__':
     config1 = {'name': 'sensor',
               'location': 'moondalup',
               'topic-root': "lot",
+               'topic-qualifier': " ",
               'broker': 'localhost',
               'port': 1883,
               }
