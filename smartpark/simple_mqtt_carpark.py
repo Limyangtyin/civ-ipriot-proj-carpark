@@ -1,3 +1,4 @@
+
 from datetime import datetime
 
 import random
@@ -5,7 +6,6 @@ import mqtt_device
 import paho.mqtt.client as paho
 from paho.mqtt.client import MQTTMessage
 from config_parser import parse_config
-
 
 class CarPark(mqtt_device.MqttDevice):
     """Creates a carpark object to store the state of cars in the lot"""
@@ -82,7 +82,7 @@ if __name__ == '__main__':
     #           'is_stuff': False
     #           }
     # TODO: Read config from file
-    config = parse_config('config.json')
-    car_park = CarPark(config)
+    config1 = parse_config()
+    car_park = CarPark(config1)
     print("Carpark initialized")
     print("Carpark initialized")
